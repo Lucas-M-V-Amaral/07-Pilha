@@ -105,17 +105,17 @@ void pop()
 {
 
 	if (topo == NULL) {
-		cout << "Pilha Vazia";
+		cout << "Pilha Vazia" << endl;
 	}
 
 	else {
 
 		if (topo->prox == NULL) {
-			cout << topo->valor << " foi removido e, por ser o unico elemento presente na pilha, a mesma agora esta vazia.";
+			cout << topo->valor << " foi removido e, por ser o unico elemento presente na pilha, a mesma agora esta vazia." << endl;
 			topo = NULL;
 		}
 		else {
-			cout << topo->valor << " foi removido.";
+			cout << topo->valor << " foi removido." << endl;
 
 			NO* aux = topo;
 			topo = aux->prox;
