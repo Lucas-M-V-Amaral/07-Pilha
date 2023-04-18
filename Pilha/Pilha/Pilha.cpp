@@ -116,7 +116,10 @@ void pop()
 		}
 		else {
 			cout << topo->valor << " foi removido.";
-			topo = topo->prox;
+
+			NO* aux = topo;
+			topo = aux->prox;
+			free(aux); 
 		}
 	}
 
